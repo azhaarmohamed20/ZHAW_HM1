@@ -33,11 +33,12 @@ Die fact_for Methode ist um den Faktor 2 schneller als die rekursive Implementat
 
 Gibt es in Python eine obere Grenze für die Fakultät von n
     1. als ganze Zahl (vom Typ 'integer')? Versuchen Sie hierzu, das Resultat für n ∈ [190, 200] als integer auszugeben.
+        Die Fakultät von 190 bis 200 können ohne Probleme ausgegeben werden.
         Siehe ausgabe unten.
 
     2. als reelle Zahl (vom Typ 'float')? Versuchen Sie hierzu, das Resultat für n ∈ [170, 171] als float auszugeben.
-        Wenn ich versuche die Fakultät als Float auszugeben kriege ich die Folgende Ausgabe:
-            OverflowError: int too large to convert to float
+        Wenn ich versuche die Fakultät als Float auszugeben kriege ich ab Fakultät 171 die Folgende Ausgabe: "OverflowError: int too large to convert to float"
+    
 """
 
 # 1 Integer
