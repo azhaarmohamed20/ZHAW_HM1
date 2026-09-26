@@ -76,7 +76,7 @@ def Berisha_Mohamed_S01_Aufg2(a, xmin, xmax):
     print("f'(x) =", f(derivative, x_int))
     print("F(x) =", f(stamm, x_int))
 
-    return x, p, dp, pint
+    return(x, p, dp, pint)
 
 def check_vector(a):
     a = np.asarray(a)
@@ -89,7 +89,7 @@ def check_vector(a):
     return a
 
 plt.figure(1)
-x, p, dp, pint = Berisha_Mohamed_S01_Aufg2([1, 1, 0], -5, 5)
+[x, p, dp, pint] = Berisha_Mohamed_S01_Aufg2([1, 1, 0], -5, 5)
 plt.plot(x, p, label='f(x)')
 plt.xlim(-10, 10)
 plt.ylim(-10, 10)
