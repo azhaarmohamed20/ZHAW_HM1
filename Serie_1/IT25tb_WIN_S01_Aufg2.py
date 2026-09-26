@@ -60,7 +60,7 @@ def f_stamm(a, x):
     stamm = f_stamm_vector(a)
     return f(stamm, x)
 
-def polynom(a, xmin, xmax):
+def Berisha_Mohamed_S01_Aufg2(a, xmin, xmax):
     x = np.arange(xmin, xmax+1, 0.1)
     p = f(a, x)
     derivative = f_abl_vector(a)
@@ -89,7 +89,7 @@ def check_vector(a):
     return a
 
 plt.figure(1)
-x, p, dp, pint = polynom([1, 1, 0], -5, 5)
+x, p, dp, pint = Berisha_Mohamed_S01_Aufg2([1, 1, 0], -5, 5)
 plt.plot(x, p, label='f(x)')
 plt.xlim(-10, 10)
 plt.ylim(-10, 10)
