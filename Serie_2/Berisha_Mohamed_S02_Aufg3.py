@@ -15,7 +15,7 @@ s = 1.0;
 x_werte = []
 y_werte = []
 
-for _ in range(100):
+for i in range(100):
     x_werte.append(2 * n)
     y_werte.append(umfang_annaeherung(n, s))
 
@@ -54,7 +54,7 @@ s = 1.0;
 x_werte_neueVariante = []
 y_werte_neueVariant = []
 
-for _ in range(100):
+for i in range(100):
     x_werte_neueVariante.append(2 * n)
     y_werte_neueVariant.append(umfang_annaeherung_neueVariante(n, s))
 
