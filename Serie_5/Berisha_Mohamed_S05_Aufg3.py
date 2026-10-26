@@ -1,5 +1,6 @@
 import numpy as np
 
+
 # Sekanten Verfahren
 def Berisha_Mohamed_S05_Aufg3(f, x0, x1, tol):
     for i in range(100):
@@ -13,7 +14,7 @@ def Berisha_Mohamed_S05_Aufg3(f, x0, x1, tol):
 
         if abs(x2 - x1) < tol:
             return x2
-        
+
         x0 = x1
         x1 = x2
     raise ValueError("Keine Konvergenz nach 100 Iterationen.")
@@ -24,13 +25,16 @@ def Berisha_Mohamed_S05_Aufg3(f, x0, x1, tol):
  Das Newton-Verfahren benötigt die Ableitung f'(x). Diese kann bei einer beliebigen Funktion f nicht ohne Weiteres automatisch berechnet werden. Deshalb müsste man die Ableitung zusätzlich übergeben oder numerisch approximieren.
 """
 
+
 # Funktion von Aufgabe 1
 def f1(x):
-    return np.exp(x**2) + x**(-3) - 10
+    return np.exp(x**2) + x ** (-3) - 10
+
 
 # Funktion von Aufgabe 2
 def f2(h):
     return (np.pi * h**2 / 3) * (15 - h) - 471
+
 
 tol = 1e-3
 
@@ -47,3 +51,10 @@ print("Nullstelle 3:", y3)
 print("")
 print("Aufgabe 2:")
 print("Maximale Wasserhöhe:", y4, "m")
+
+"""
+ Kurze Notiz zu den von Hand berechneten und den python berechneten Ergebnissen:
+ Die python berechneten Nullstellen stimmen näherungsweise mit den Ergebnissen
+ aus Aufgabe 1 und 2 überein. Kleine Abweichungen entstehen, da in
+ Aufgabe 1 nur vier Iterationen durchgeführt wurden.
+"""
